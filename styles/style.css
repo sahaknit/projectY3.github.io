@@ -1,0 +1,169 @@
+html, body {	
+	background-color: #000000;		
+	height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	background: #000000;
+	height: 100%;
+	width: 100%;
+}
+#ball {
+	background-color: #ffffff;
+	border-radius: 50%;
+	bottom: 10px;
+	height: 25px;
+	left: 5px;
+	position: absolute;
+	width: 25px;
+	z-index: 2;
+}
+#pathWrapper {
+	z-index: 1;
+}
+.dot {
+	background-color: #ffffff;
+	border-radius: 50%;
+	height: 10px;
+	position: absolute;
+	width: 10px;	
+}
+#floor {
+	background-color: #ff0000;
+	bottom: 5px;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+#pathWrapper {
+	height: 97%;
+	width: 100%;
+}
+#speedLabel, #angleLabel, #posX, #posY {
+	color: #ffffff;
+}
+.configBox {			
+	height: auto;
+	line-height: 25px;
+	padding: 15px 5px;
+	position: absolute;
+	top: 25px;
+	width: 300px;	
+	z-index: 2;		
+}
+.configBox button {
+	float: left;
+	height: 25px;
+	margin-right: 10px;
+	width: 25px;
+}
+#speedBox, #angleBox {
+	display: none;
+}
+#infoBox {
+	background-color: rgba(96,96,96,0.2);
+	border-radius: 10px;
+	height: 200px;
+	padding: 15px;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	width: 200px;
+	z-index: 2;
+}
+#colorTable {
+	background-color: rgba(96,96,96,1);
+	display: none;
+	height: auto;
+	margin-top: 10px;
+	padding: 10px;
+	position: absolute;
+	top: 25px;
+	width: 355px;
+	z-index: 2;
+}
+#colorTable:before, #colorTable:after {
+	content: "";
+	display: table;
+	clear: both;
+} 
+#colorTable output, #colorTable input[type=range] {
+	margin-left: 10px;
+}
+.box {
+	background-color: #ffffff;	
+	float: left;
+	margin: 0 2px 2px 0;		
+	height: 25px;			
+	width: 25px;
+}
+button {
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+button:hover {
+	color: #990000;
+}
+#colorTableForm {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.colorTableRadio {
+	color: #ffffff;
+	margin: 0 5px;
+}
+#rgbSetBlock, #backgroundUrl {
+	color: #ffffff;
+	height: auto;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+/*Sldier*/
+.colorPickerSlider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #AAA;
+    background-image: linear-gradient(to bottom, #EEE, #AAA);
+    border: 2px solid #999;
+    height:10px;
+    width:10px;
+    border-radius: 15px;
+}
+.colorPickerSlider::-moz-range-thumb {
+	background-color: #aaa;
+	background-image:  linear-gradient(to bottom, #eee, #aaa);
+	border: 1px solid #999;
+	height: 10px;
+	width: 10px;
+	border-radius: 15px;
+}
+#rgbView {
+	background-color: rgb(127,127,127);
+	height: 50px;
+	margin-top: 10px;
+	width: 100%;			
+}
+#backgroundUrl input[type=text] {
+	height: 20px;
+	width: 270px;
+}
+#backgroundUrl input[type=text]:focus {
+	border-color: #ff0000;
+}
+.setColorBtns {
+	background-color: #bbbbbb;
+	color: #000000;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 5px;
+	height: 20px;
+	width: auto;	
+}
+.setColorBtns:hover {
+	border: solid 1px #ff0000;
+}
