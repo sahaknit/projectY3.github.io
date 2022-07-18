@@ -1,5 +1,5 @@
 html, body {	
-	background-color: #000000;		
+	/* background-color: #000000;		 */
 	height: 100%;
 }
 * {
@@ -7,12 +7,54 @@ html, body {
 	padding: 0;
 }
 #wrapper {
-	background: #000000;
-	height: 100%;
+	/* background: #000000; */
+	height:100%;
 	width: 100%;
+	background-image: url('../images/2112.w026.n002.1258B.p1.1258.jpg');
+	background-size: cover;
+	position: absolute;
+	background-repeat: no-repeat;	
+}
+.Header{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.Header h1{
+	text-align: center;
+	padding-top: 60px;
+	font-family: Helvetica;
+	font-size: 60px;
+	font-style: bold;
+}
+.Header .all{
+	
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	border: solid 2px black ;
+}
+.Header .logo1{
+
+	width: 33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.Header .text{
+
+	width: 33%;
+	height: 100%;
+}
+.Header .logo2{
+
+	width: 33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 #ball {
-	background-color: #ffffff;
+	background-color: #e30a0a;
 	border-radius: 50%;
 	bottom: 10px;
 	height: 25px;
@@ -25,7 +67,7 @@ html, body {
 	z-index: 1;
 }
 .dot {
-	background-color: #ffffff;
+	background-color: #080808;
 	border-radius: 50%;
 	height: 10px;
 	position: absolute;
@@ -43,15 +85,15 @@ html, body {
 	height: 97%;
 	width: 100%;
 }
-#speedLabel, #angleLabel, #posX, #posY {
-	color: #ffffff;
+#speedLabel, #angleLabel, #posX, #posY,#Vx,#Vy, #acceleration {
+	color: #000000;
 }
 .configBox {			
 	height: auto;
 	line-height: 25px;
 	padding: 15px 5px;
 	position: absolute;
-	top: 25px;
+	top: 100px;
 	width: 300px;	
 	z-index: 2;		
 }
@@ -67,12 +109,12 @@ html, body {
 #infoBox {
 	background-color: rgba(96,96,96,0.2);
 	border-radius: 10px;
-	height: 200px;
+	height: 370px;
 	padding: 15px;
 	position: absolute;
 	right: 5px;
 	top: 10px;
-	width: 200px;
+	width: 320px;
 	z-index: 2;
 }
 #colorTable {
